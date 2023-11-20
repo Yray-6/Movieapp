@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --ash: (rgb(45, 45, 45));
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  color: white;
+}
+
+
+
+.root-layout {
+  padding: 3% 8%;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px){
+  .root-layout{
+    padding:3% 5%;
+  }
+}
+
+.overlay-dark {
+  background-color: theme('overlay.dark');
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  background-color: red;
+
+  border-radius: 2px;
+}
+nav h2 {
+  color: red;
+  margin-right: auto;
+ 
+}
+
+.home-page {
+  margin: 3% 0%;
+}
+
+.home-page p {
+  margin-top: 3%;
+}
+
+.home-page .hero {
+  margin-top: 3%;
+}
+
+.image-movie {
+  object-fit: contain;
+}
+.search {
+  margin: 5% 0;
+}
+.search-result {
+  margin: 5% 0;
+}
+
+.search-result .details {
+  background-color: rgb(45, 45, 45) !important;
+  padding: 5%;
+}
+
+.search-input {
+  border: none;
+  outline: none; /* Remove the default focus border */
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  color: black;
+
+  margin-top: 2%;
+}
+
+.search-button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: rgb(161, 0, 0);
+}
+
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  padding: 3px;
+  color: blue !important;
+  text-transform: capitalize;
+  font-size: 1.0em;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: "/";
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color: #ddd;
+}
+
+form {
+  margin-top: 30px;
+}
+
+form input,
+form label span,
+form textarea {
+  display: block;
+}
+form input,
+form textarea {
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 0;
+  width: 300px;
+  color: var(--secondary);
+  color: black !important;
+}
+form label span {
+  margin-bottom: 10px;
+}
+
+.carouselimg {
+  object-fit: cover;
+  width: 100%;
+}
+
