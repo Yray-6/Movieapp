@@ -21,7 +21,7 @@ export default function RootLayout() {
   }, [scrolled]);
   return (
     <div className="root-layout bg-hero bg-blend-overlay overlay-dark min-h-[500px] lg:min-h-[700px]">
-      <nav className={`bg-${scrolled ? 'black' : 'transparent'} py-5 top-0 fixed right-0 left-0 grid md:grid-cols-6 grid-cols-5  z-30`}>
+      <nav className={`bg-black py-5 top-0 fixed right-0 left-0 grid md:grid-cols-6 grid-cols-5  z-30`}>
         
         <h2 className="md:text-2xl pl-8 md:pl-20 text-base pt-2 text-red-500  font-bold md:col-span-5 col-span-3">
           GICHENGA-APP
