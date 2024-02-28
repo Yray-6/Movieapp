@@ -15,7 +15,7 @@ function SearchResults() {
     fetchData();
   };
 
-  // Define the useEffect hook to fetch data when the query changes
+
 
   // Define an async function to fetch data from the API
   async function fetchData() {
