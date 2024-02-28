@@ -53,7 +53,7 @@ function SearchResults() {
       </form>
 
       {loading && <p>Loading...</p>}
-      {error && <p>Error: {error.message}</p>}
+      {error && <p>Error: error</p>}
       <div className="search-results">
         <div className="px-2 lg:px-10 ">
           {results.length > 0 &&
