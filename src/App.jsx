@@ -11,11 +11,15 @@ import HomeError from "./pages/Home/HomeError";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import { contactAction } from "./pages/Contact";
+import MovieDetails, { MovieLoader } from "./MovieDetails";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} errorElement={<HomeError />} />
+      <Route path=":id" element={<MovieDetails />} 
+      loader={MovieLoader} />
+
       <Route path="about" element={<About />}>
         <Route
           path="contact"
